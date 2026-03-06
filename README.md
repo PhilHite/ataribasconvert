@@ -11,7 +11,7 @@ ataribasconvert INPUTFILE.BAS OUTPUTFILE.BAS
 Example:
 
 ```bash
-ataribasconvert PROGRAM.BAS PROGRAM_ATARI.BAS
+ataribasconvert PROGRAM.BAS PROGRAMA.BAS
 ```
 
 The tool will report how many bytes were converted and where the output was written.
@@ -33,7 +33,7 @@ The tool is now available from anywhere on the command line.
 Once converted, load the file into Atari800MacX using:
 
 ```
-ENTER "H1:PROGRAM.BAS"
+ENTER "H1:PROGRAMA.BAS"
 ```
 
 The emulator will respond with `READY`. You can then:
@@ -45,7 +45,7 @@ The emulator will respond with `READY`. You can then:
 
 > **Note:** Before saving, ensure that under **Settings... > Hard Drives** the **'Hard Drives Read Only'** checkbox is unticked.
 
-- `SAVE "H1:PROGRAM.BAS"` — save the program back to disk
+- `SAVE "H1:PROGRAMA.BAS"` — save the program back to disk
 
 ## How it works
 
