@@ -1,6 +1,6 @@
 # ataribasconvert
 
-A macOS command line tool that converts a plain text Atari BASIC `.BAS` file by replacing all `0x0A` (Unix line feed) bytes with `0x9B` (Atari EOL bytes), making the file compatible with Atari BASIC on emulators such as Atari800MacX.
+A command line tool that converts a plain text Atari BASIC `.BAS` file by replacing all `0x0A` (Unix line feed) bytes with `0x9B` (Atari EOL bytes), making the file compatible with Atari BASIC on emulators such as Atari800MacX.
 
 ## Usage
 
@@ -17,7 +17,7 @@ ataribasconvert PROGRAM.BAS PROGRAMA.BAS
 The tool will report how many bytes were converted and where the output was written.
 
 ## Installation
-
+macOS & Linux
 1. Download the `ataribasconvert` file.
 2. Open Terminal and run:
 
@@ -25,6 +25,9 @@ The tool will report how many bytes were converted and where the output was writ
 chmod +x ataribasconvert
 sudo mv ataribasconvert /usr/local/bin/
 ```
+Windows
+1. Download both `ataribasconvert.bat` and `ataribasconvert.py`.
+2. Place both files in the same folder. For system-wide access from any directory, copy both files to a folder that is on your system PATH, for example `C:\Windows\System32`.
 
 The tool is now available from anywhere on the command line.
 
