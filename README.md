@@ -19,42 +19,42 @@ The tool will report how many bytes were converted and where the output was writ
 ## Installation
 
 1. Download both `ataribasconvert` and `ataribasconvert.py`.
-2. 2. Open Terminal and run:
-  
-   3. ```bash
-      chmod +x ataribasconvert
-      sudo cp ataribasconvert /usr/local/bin/
-      sudo cp ataribasconvert.py /usr/local/bin/
-      sudo chmod 644 /usr/local/bin/ataribasconvert.py
-      ```
+2. Open Terminal and run:
 
-      The tool is now available from anywhere on the command line.
+```bash
+chmod +x ataribasconvert
+sudo cp ataribasconvert /usr/local/bin/
+sudo cp ataribasconvert.py /usr/local/bin/
+sudo chmod 644 /usr/local/bin/ataribasconvert.py
+```
 
-      ## Loading the converted file in Atari800MacX
+The tool is now available from anywhere on the command line.
 
-      Once converted, load the file into Atari800MacX using:
+## Loading the converted file in Atari800MacX
 
-      ```
-      ENTER "H1:PROGRAM.BAS"
-      ```
+Once converted, load the file into Atari800MacX using:
 
-      The emulator will respond with `READY`. You can then:
+```
+ENTER "H1:PROGRAM.BAS"
+```
 
-      - `LIST` - display the program (use Control+S to pause scrolling)
-      - - `LIST 100` - list from line 100 onwards
-        - - `LIST 100,200` - list lines 100 through 200
-          - - `RUN` - run the program
-           
-            - Note: Before saving, ensure that under Settings... > Hard Drives the 'Hard Drives Read Only' checkbox is unticked.
-           
-            - - `SAVE "H1:PROGRAM.BAS"` - save the program back to disk
-             
-              - ## How it works
-             
-              - Atari BASIC uses `0x9B` as its end-of-line character, whereas files created or edited on macOS/Unix use `0x0A` (standard Unix line feed). This tool performs the following steps:
-             
-              - **1. Trailing newline**
-              - If the source `.txt` file does not end with a `0x0A` (Unix line feed) byte, one is automatically appended before conversion. This ensures the last line is always processed correctly regardless of how the file was saved.
-             
-              - **2. EOL conversion**
-              - All `0x0A` bytes are replaced with `0x9B` (Atari EOL) via a binary find-and-replace, making the file readable by Atari BASIC.
+The emulator will respond with `READY`. You can then:
+
+- `LIST` - display the program (use **Control+S** to pause scrolling)
+- `LIST 100` - list from line 100 onwards
+- `LIST 100,200` - list lines 100 through 200
+- `RUN` - run the program
+
+> **Note:** Before saving, ensure that under **Settings... > Hard Drives** the **'Hard Drives Read Only'** checkbox is unticked.
+
+- `SAVE "H1:PROGRAM.BAS"` - save the program back to disk
+
+## How it works
+
+Atari BASIC uses `0x9B` as its end-of-line character, whereas files created or edited on macOS/Unix use `0x0A` (standard Unix line feed). This tool performs the following steps:
+
+**1. Trailing newline**
+If the source `.txt` file does not end with a `0x0A` (Unix line feed) byte, one is automatically appended before conversion. This ensures the last line is always processed correctly regardless of how the file was saved.
+
+**2. EOL conversion**
+All `0x0A` bytes are replaced with `0x9B` (Atari EOL) via a binary find-and-replace, making the file readable by Atari BASIC.
