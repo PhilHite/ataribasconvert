@@ -5,13 +5,13 @@ A macOS command line tool that converts a plain text Atari BASIC `.txt` file by 
 ## Usage
 
 ```bash
-ataribasconvert INPUTFILE.txt OUTPUTFILE.txt
+ataribasconvert INPUTFILE.txt OUTPUTFILE.BAS
 ```
 
 Example:
 
 ```bash
-ataribasconvert PROGRAM.txt PROGRAM_ATARI.txt
+ataribasconvert PROGRAM.txt PROGRAM_ATARI.BAS
 ```
 
 The tool will report how many bytes were converted and where the output was written.
@@ -35,7 +35,7 @@ The tool will report how many bytes were converted and where the output was writ
       Once converted, load the file into Atari800MacX using:
 
       ```
-      ENTER "H1:PROGRAM.txt"
+      ENTER "H1:PROGRAM.BAS"
       ```
 
       The emulator will respond with `READY`. You can then:
@@ -47,7 +47,7 @@ The tool will report how many bytes were converted and where the output was writ
            
             - Note: Before saving, ensure that under Settings... > Hard Drives the 'Hard Drives Read Only' checkbox is unticked.
            
-            - - `SAVE "H1:PROGRAM.txt"` - save the program back to disk
+            - - `SAVE "H1:PROGRAM.BAS"` - save the program back to disk
              
               - ## How it works
              
