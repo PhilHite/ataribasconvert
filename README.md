@@ -35,7 +35,7 @@ The tool is now available from anywhere on the command line.
 Once converted, load the file into Atari800MacX using:
 
 ```
-ENTER "H1:PROGRAM_ATARI.BAS"
+ENTER "H1:PROGRAM.BAS"
 ```
 
 The emulator will respond with `READY`. You can then:
@@ -47,7 +47,7 @@ The emulator will respond with `READY`. You can then:
 
 > **Note:** Before saving, ensure that under **Settings... > Hard Drives** the **'Hard Drives Read Only'** checkbox is unticked.
 
-- `SAVE "H1:PROGRAM_ATARI.BAS"` - save the program back to disk
+- `SAVE "H1:PROGRAM.BAS"` - save the program back to disk
 
 ## How it works
 
