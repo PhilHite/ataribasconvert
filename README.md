@@ -11,7 +11,7 @@ ataribasconvert inputfile.txt outputfile.bas
 Example:
 
 ```bash
-ataribasconvert program.txt program_atari.bas
+ataribasconvert program.txt program.bas
 ```
 
 The output file will be saved as `PROGRAM_ATARI.BAS` (uppercase). The tool will report how many bytes were converted and where the output was written.
