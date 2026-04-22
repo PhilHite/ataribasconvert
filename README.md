@@ -14,7 +14,7 @@ Example:
 ataribasconvert program.txt program.bas
 ```
 
-The output file will be saved as `PROGRAM_ATARI.BAS` (uppercase). The tool will report how many bytes were converted and where the output was written.
+The output file will be saved as `PROGRAM.BAS` (uppercase). The tool will report how many bytes were converted and where the output was written.
 
 ## Installation
 
