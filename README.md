@@ -60,4 +60,4 @@ If the source `.txt` file does not end with a `0x0A` (Unix line feed) byte, one 
 All `0x0A` bytes are replaced with `0x9B` (Atari EOL) via a binary find-and-replace, making the file readable by Atari BASIC.
 
 **3. Output filename**
-The output filename is automatically converted to uppercase (e.g. `program_atari.bas` becomes `PROGRAM_ATARI.BAS`).
+The output filename is automatically converted to uppercase (e.g. `program.bas` becomes `PROGRAM.BAS`).
